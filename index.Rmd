@@ -5,82 +5,49 @@ output: html_document
 
 ### Introduction
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
+The data that has been analyzed has been published by Seattle Public Libraries. It includes all checkouts made from 2022. In my analysis I explore various trends regarding specific authors, how many books
+are being checked out, and popular titles.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+After analyzing this data published by Seattle Public Libraries, I have found that the author with the most checkouts from a single title is Luis Alberto Urrea, with 
+2,950 checkouts from the book "The House of Broken Angels". There are more digital checkouts than physical checkouts. The book with the most checkouts is "The House of Broken Angels". The most popular material type checked out are books. January has the most book checkouts of all the months
 
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
-
-Feel free to calculate and report values that you find relevant.
 
 ### The Dataset
 
-- Who collected/published the data?  
-- What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
-- Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
-- What are possible limitations or problems with this data?   (at least 200 words)
 
+
+This dataset was published by the Seattle Public Library system. It includes data 
+on all the checkouts from the library system in 2022. It includes whether or not
+the checkout was physical or digital, the material type, the publication year of the
+title, the month it was checked out, the author, the ISBN, and other information.
+Possible limitations of the data is that it may be slightly skewed towards titles
+that are checked out in masse, such as schools that have many students at once
+reading the same book for an assignment. This could lead people to fall conclusions
+about what are the most favored titles.
 
 ### First Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
 
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+This chart shows how many books were checked out per month. It seems like January
+is a popular month to start reading for many people. I included this chart because
+it gives some insight on when people are reading.
 
 ``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
 ```
 
 ### Second Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
+This second chart shows checkouts per month from books written by Trevor Noah. He seems to follow the same pattern as the general trend of when books are checked out, giving him January as his most popular month.
 
 ``````{r, echo = FALSE, code = readLines("chart2_example.R")}
 ```
 
-### Your Choice
+### My Choice
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, code = readLines("chart3_example.R")}
 ```
 
 
